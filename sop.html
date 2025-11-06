@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warung Sop Ayam Pecok Tellu - Jember</title>
+
+  <!-- ✅ Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff9800, #ffc107);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    nav.navbar {
+      background-color: white !important;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+      font-weight: 600;
+      color: #ff9800 !important;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #333 !important;
+    }
+
+    .nav-link:hover {
+      color: #ff9800 !important;
+    }
+
+    .hero {
+      background: url('warung.jpeg') center/cover no-repeat;
+      height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.45);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-order {
+      background: #ff9800;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 12px 25px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn-order:hover {
+      background: #e68900;
+      transform: scale(1.05);
+    }
+
+    .menu-section h2 {
+      color: #ff9800;
+      margin-bottom: 40px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      height: 220px;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .card-body h5 {
+      color: #ff9800;
+      font-weight: 600;
+    }
+
+    .contact, .map {
+      background-color: #fff8e1;
+      border-radius: 15px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      margin-top: 40px;
+    }
+
+    .contact a {
+      color: #ff9800;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #ff9800, #ffc107);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Warung Sop Ayam Pecok Tellu</h1>
+    <p>Lezat, hangat, dan bikin nagih – kini hadir di Jember!</p>
+  </header>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pecok Tellu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content text-center">
+      <h2>Selamat Datang di Warung Sop Ayam Pecok Tellu</h2>
+      <p>Rasakan cita rasa hangat khas Jember</p>
+      <a href="https://wa.me/628113560280?text=Halo%2C%20saya%20ingin%20pesan%20Sop%20Ayam%20di%20Warung%20Sop%20Ayam%20Pecok%20Tellu" target="_blank" class="btn btn-order mt-3">
+        📲 Pesan Sekarang
+      </a>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <section id="menu" class="menu-section container py-5">
+    <h2>🍗 Menu Andalan Kami</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="original.jpeg" class="card-img-top" alt="Sop Ayam Original">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sop Ayam Original</h5>
+            <p class="card-text">Kuah gurih segar dengan potongan ayam lembut.<br>💰 Rp 15.000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="sopiga.jpeg" class="card-img-top" alt="Sop Iga Sapi">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sop Iga Sapi</h5>
+            <p class="card-text">Iga sapi empuk dengan kuah gurih rempah alami.<br>💰 Rp 25.000</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="card">
+          <img src="spesial.jpeg" class="card-img-top" alt="Sop Ayam Spesial">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sop Ayam Spesial</h5>
+            <p class="card-text">Campuran ayam kampung dan sayur segar, rasa istimewa.<br>💰 Rp 20.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="container">
+    <div class="contact">
+      <h2>📞 Kontak Kami</h2>
+      <p>
+        📍 <b>Alamat:</b> Jl. Gajah Mada No.159, Kaliwates Kidul, Kaliwates,<br>
+        Kabupaten Jember, Jawa Timur 68131<br><br>
+        📱 <b>Telepon/WhatsApp:</b> <a href="https://wa.me/628113560280" target="_blank">0811 356 0280</a><br>
+        ⏰ <b>Jam Buka:</b> 08.00 - 21.00 WIB
+      </p>
+    </div>
+  </section>
+
+  <!-- LOKASI -->
+  <section id="lokasi" class="container">
+    <div class="map mt-4">
+      <h2>📍 Lokasi Warung Kami</h2>
+      <iframe 
+        src="https://www.google.com/maps?q=Jl.+Gajah+Mada+No.159,+Kaliwates+Kidul,+Kaliwates,+Kabupaten+Jember,+Jawa+Timur+68131&hl=id&z=17&output=embed"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Warung Sop Ayam Pecok Tellu | Dibuat dengan ❤️ oleh Devi</p>
+  </footer>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
